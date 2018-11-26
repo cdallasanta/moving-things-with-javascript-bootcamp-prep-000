@@ -1,8 +1,8 @@
 const app = "I don't do much."
 
-let dodger = $('#dodger');
+let dodger = document.querySelector('#dodger');
 
-$(document).on('keydown', function(event){
+document.addEventListener('keydown', function(event){
   if(event.which === 37){
     let leftString = dodger.style.left.replace('px','');
     let leftNum = parseInt(leftString);
