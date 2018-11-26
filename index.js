@@ -3,7 +3,7 @@ const app = "I don't do much."
 let dodger = document.querySelector('#dodger');
 
 document.addEventListener('keydown', function(event){
-  if(event.which === 37){
+  if(event.which === 37 && dodger.style.left !== '0px'){
     let leftString = dodger.style.left.replace('px','');
     let leftNum = parseInt(leftString);
     dodger.style.left = `${leftNum-1}px`;
