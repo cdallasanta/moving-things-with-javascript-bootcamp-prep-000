@@ -5,7 +5,7 @@ let dodger = document.querySelector('#dodger');
 document.addEventListener('keydown', function(event){
   if(event.which === 37 && dodger.style.left !== '0px'){
     moveDodgerLeft();
-  } else if (event.which === 39){
+  } else if (event.which === 39 && dodger.style.left !== '360px'){
     moveDodgerRight();
   }
 });
