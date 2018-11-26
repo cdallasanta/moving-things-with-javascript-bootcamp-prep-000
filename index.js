@@ -4,6 +4,8 @@ let dodger = $('#dodger');
 
 $(document).on('keydown', function(event){
   if(event.which === 37){
-    dodger.style.left = 
+    let leftString = dodger.style.left.replace('px','');
+    let leftNum = parseInt(leftString);
+    dodger.style.left = `${leftNum-1}px`;
   }
 });
