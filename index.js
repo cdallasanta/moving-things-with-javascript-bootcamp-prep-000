@@ -7,5 +7,9 @@ document.addEventListener('keydown', function(event){
     let leftString = dodger.style.left.replace('px','');
     let leftNum = parseInt(leftString);
     dodger.style.left = `${leftNum-1}px`;
-  } else if (event.which === )
+  } else if (event.which === 39){
+    let leftString = dodger.style.left.replace('px','');
+    let leftNum = parseInt(leftString);
+    dodger.style.left = `${leftNum+1}px`;
+  }
 });
